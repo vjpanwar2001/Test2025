@@ -1,16 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Hello World!</title>
-<link rel="stylesheet" href="bluestyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- MATERIAL ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f6f8fb;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            padding: 20px 40px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 40px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(to right, #e0f2ff, #e8faff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        /* FEATURES */
+        .features {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            width: 300px;
+            padding: 30px;
+            border-radius: 14px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .feature-box .material-icons {
+            font-size: 45px;
+            margin-bottom: 15px;
+            color: #0077ff;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            max-width: 550px;
+            margin: auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-box button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #0077ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
 
-<h1>Hello world!</h1>
-<div><img src="img_hello_world.jpg" alt="Hello World from Space" style="width:100%;max-width:960px"></div>
-<p>This is the first file in my new Git Repo.</p>
-<i>Hello world!!!</i>
-<p>A new line in our file!</p>
-<div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <span class="material-icons">flash_on</span> BrandName
+        </div>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero">
+        <h1>Simple & Clean Landing Page</h1>
+        <p>Modern UI design built with HTML, CSS & Material Icons</p>
+    </section>
+
+    <!-- SECTION 2: FEATURES -->
+    <section>
+        <h2 style="text-align:center;margin-bottom:30px;">Our Features</h2>
+
+        <div class="features">
+            <div class="feature-box">
+                <span class="material-icons">speed</span>
+                <h3>Fast Performance</h3>
+                <p>Optimized for best user experience and speed.</p>
+            </div>
+
+            <div class="feature-box">
+                <span class="material-icons">security</span>
+                <h3>Secure</h3>
+                <p>We provide top-level security for your data.</p>
+            </div>
+
+            <div class="feature-box">
+                <span class="material-icons">support_agent</span>
+                <h3>24/7 Support</h3>
+                <p>Our support team is always here to help you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT -->
+    <section>
+        <h2 style="text-align:center;margin-bottom:30px;">Contact Us</h2>
+
+        <div class="contact-box">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
 </body>
 </html>
